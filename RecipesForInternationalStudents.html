@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Recipes for International Students</title>
+    <style>
+        body {
+            background: rgb(244, 238, 244);
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+        img {
+            margin-left: 41%;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(82, 75, 75);
+        }
+        #healthy {
+            margin-left: 41%;
+        }
+        #bar{
+            margin-left: 40%;
+        }
+
+        
+        .content-tabs {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(82, 75, 75);
+            margin-left: 31%;
+        }
+          
+        .tabs {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0;
+            padding-left: 27%;
+        }
+          
+        .tabs span {
+            background: rgb(12, 17, 12);
+            padding: 10px;
+            border: 1px solid rgb(170, 167, 195);
+            margin-left: 50px;
+        }
+          
+        .tabs span:hover {
+            background: rgb(167, 209, 190);
+            cursor: pointer;
+            color: black;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="content-tabs">
+        <p>One stop shop for International Students</p>
+
+    </div>
+    <div class="tabs">
+        <span data-tab-value="#tab_1">Party</span>
+        <span data-tab-value="#tab_2">Affordable</span>
+        <span data-tab-value="#tab_3">Local fav</span>
+        <span data-tab-value="#tab_4">Quick</span>
+        <span data-tab-value="#tab_5">Healthy</span>
+    </div>
+  
+    <div class="tab-content">
+        <div class="tabs__tab" id="tab_1" data-tab-info>
+            <img src="party.jpeg" alt="Party Foods"width="300" height="200">
+  
+        </div>
+        <div class="tabs__tab" id="tab_2" data-tab-info>
+            <img src="healthycheap.jpeg" alt="Party Foods"width="300" height="200">
+  
+        </div>
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+            <img src="local.jpeg" alt="Party Foods"width="300" height="200">
+  
+        </div>
+        <div class="tabs__tab" id="tab_4" data-tab-info>
+            <img src="quick.jpeg" alt="Party Foods" width="300" height="200">
+
+        </div>
+        <div class="tabs__tab" id="tab_5" data-tab-info>
+            <img id="healthy" src="healthy.jpeg" alt="Healthy" width="300" height="200">
+  
+        </div>
+
+        <div class="dropdown">
+            <button id="bar" onclick="myFunction()" class="dropbtn">
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#about">Proteins</a>
+              <a href="#base">Carbohydrates</a>
+              <a href="#blog">Fats</a>
+            </div>
+          </div>
+    </div>
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script>
+</body>
+  
+</html>
