@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  
 <head>
-<title>Budget Friendly Receipes</title>
-</head>
-<body>
-    <h1 style="color: black;">Budget Friendly Recipes</h1> 
-<button style="background-color: gray;"> "Party Recipes!"</button>
-<button style="background-color: gray"> "Healthy Recipes"</button>
-<button style="background-color: grey"> "Locally available"</button>
-<button style="background-color: grey"> "Quick Recipes"</button>
+    <title>Budget Friendly Recipes</title>
+    <style>
+        body {
+            background: rgb(229, 163, 229);
+        }
+          
+        [data-tab-info] {
+            display: none;
+        }
+        img {
+            margin-left: 41%;
+        }
+          
+        .active[data-tab-info] {
+            display: block;
+        }
+          
+        .tab-content {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(70, 67, 67);
+        }
+        #healthy {
+            margin-left: 41%;
+        }
+        #bar{
+            margin-left: 40%;
+        }
 
+        
+        .content-tabs {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(70, 67, 67);
+            margin-left: 31%;
+        }
+          
+        .tabs {
+            font-size: 10px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0;
+            padding-left: 27%;
+        }
+          
+        .tabs span {
+            background: rgb(12, 17, 12);
+            padding: 10px;
+            border: 1px solid rgb(170, 167, 195);
+            margin-left: 40px;
+        }
+          
+        .tabs span:hover {
+            background: rgb(200, 237, 221);
+            cursor: pointer;
+            color: black;
+        }
+    </style>
+</head>
+  
+<body>
+    <div class="content-tabs">
+        <p>All Kinds Of Recipes Within Budget</p>
+
+    </div>
+    <div class="tabs">
+        <span data-tab-value="#tab_1">Party Recipes</span>
+        <span data-tab-value="#tab_2">Healthy Recipes</span>
+        <span data-tab-value="#tab_3">Locally Available</span>
+        <span data-tab-value="#tab_4">Quick Recipes</span>
+        <span data-tab-value="#tab_5">Microwave Recipes</span>
+    </div>
+  
+    <div class="tab-content">
+        <div class="tabs__tab" id="tab_1" data-tab-info>
+            <img src="partyrecipe.webp" alt="Party"width="200" height="100">
+  
+        </div>
+        <div class="tabs__tab" id="tab_2" data-tab-info>
+            <img src="Healthyrecipe.webp" alt="Healthy"width="200" height="100">
+  
+        </div>
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+            <img src="Local.webp" alt="local"width="200" height="100">
+  
+        </div>
+        <div class="tabs__tab" id="tab_4" data-tab-info>
+            <img src="Quick.webp" alt="Quick" width="200" height="100">
+
+        </div>
+        <div class="tabs__tab" id="tab_5" data-tab-info>
+            <img src="Microwave.jpeg" alt="Microwave" width="200" height="100">
+  
+        </div>
+
+        <div class="dropdown">
+            <button id="bar" onclick="myFunction()" class="dropbtn">
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#about">Location</a>
+              <a href="#base">Price</a>
+            </div>
+          </div>
+    </div>
+    <script type="text/javascript">
+        const tabs = document.querySelectorAll('[data-tab-value]')
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+  
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document
+                    .querySelector(tab.dataset.tabValue);
+  
+                tabInfos.forEach(tabInfo => {
+                    tabInfo.classList.remove('active')
+                })
+                target.classList.add('active');
+            })
+        })
+    </script>
 </body>
+  
 </html>
