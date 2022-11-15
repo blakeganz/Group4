@@ -8,13 +8,22 @@
     </body>
     <button class="tablink" onclick="openPage('Cheap, quick & healthy', this, 'red')">Cheap, quick & Healthy</button>
     <button class="tablink" onclick="openPage('Fav recipe', this, 'green')" id="defaultOpen">Fav recipe</button>
-    <button class="tablink" onclick="openPage('Time of the day', this, 'blue')">Time of the day</button>
     <button class="tablink" onclick="openPage('On phone', this, 'orange')">On phone</button>
   </head>
+<br><br>
+<form action="/action_page.php">
+  <p>Select Meal:</p>
+  <input type="radio" id="bfast" name="meal" value="Breakfast">
+  <label for="bfast">Breakfast</label><br>
+  <input type="radio" id="lunch" name="meal" value="Lunch">
+  <label for="lunch">Lunch</label><br>
+  <input type="radio" id="dinner" name="meal" value="Dinner">
+  <label for="dinner">Dinner</label>
+</form>
 
 
   <body>
-    <br>
+    <br><br>
 
     <button id="demo" onclick="myFunction()">The nutritional information will be displayed here </button>
     <script>
