@@ -3,17 +3,18 @@
 <button onclick="location.href='https://blakeganz.github.io/Group4/index.html'" type="button"> Return to Homepage</button>
   
 <head>
-    <title>Budget Friendly Recipes!</title>
+    <title>Budget Friendly Recipes</title>
     <style>
         body {
-            background: rgb(229, 163, 229);
+            background: rgb(207, 191, 207);
+            background-image: url("j.jpeg");
         }
           
         [data-tab-info] {
             display: none;
         }
         img {
-            margin-left: 41%;
+            margin-right: 40%;
         }
           
         .active[data-tab-info] {
@@ -25,36 +26,35 @@
             font-family: sans-serif;
             font-weight: bold;
             color: rgb(70, 67, 67);
+            margin-right: 40%;
         }
         #healthy {
-            margin-left: 41%;
+            margin-right: 41%;
         }
         #bar{
-            margin-left: 40%;
+            margin-right: 40%;
         }
-
-        
         .content-tabs {
             font-size: 30px;
             font-family: sans-serif;
             font-weight: bold;
-            color: rgb(70, 67, 67);
-            margin-left: 31%;
+            color: rgb(85, 8, 8);
+            margin-right: 40%;
         }
           
         .tabs {
             font-size: 10px;
             color: rgb(255, 255, 255);
             display: flex;
-            margin: 0;
-            padding-left: 27%;
+            margin-right: 40%;
+            padding-right: 37%;
         }
           
         .tabs span {
-            background: rgb(12, 17, 12);
-            padding: 10px;
-            border: 1px solid rgb(170, 167, 195);
-            margin-left: 40px;
+            background: rgb(141, 82, 82);
+            padding: 30px;
+            border: 1px solid rgb(236, 235, 244);
+            margin-right: 40px;
         }
           
         .tabs span:hover {
@@ -64,50 +64,125 @@
         }
     </style>
 </head>
+<style>
+    body {
+      background-image: url('Website.jpeg');
+    }
+    </style>
   
 <body>
     <div class="content-tabs">
-        <p>All Kinds Of Recipes Within Budget!</p>
-
+        <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Budget Friendly Recipes</p>
+        <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Categories</p>
     </div>
     <div class="tabs">
         <span data-tab-value="#tab_1">Party Recipes</span>
         <span data-tab-value="#tab_2">Healthy Recipes</span>
         <span data-tab-value="#tab_3">Locally Available</span>
         <span data-tab-value="#tab_4">Quick Recipes</span>
-        <span data-tab-value="#tab_5">Microwave Recipes</span>
     </div>
-  
+    <br>
+    <button id="demo" onclick="myFunction()">Preparation time & Cost</button>
+    <script>
+     function myFunction() {
+      document.getElementById("demo").innerHTML = 'Preparation time & Cost';
+      }
+    </script>
     <div class="tab-content">
         <div class="tabs__tab" id="tab_1" data-tab-info>
             <img src="partyrecipe.webp" alt="Party"width="200" height="100">
-  
+            <br>
+      French Fries
+      <button id="demo" onclick="myFunction3()">Prep time & Cost</button>
+        <script>
+         function myFunction3() {
+          document.getElementById("demo").innerHTML = '5 to 6 minutes, $1.5 to $3';
+          }
+        </script>
+        <br>
+        <img src="chicken.jpeg" alt="Party"width="200" height="100">
+        <br>
+        Chicken Nuggets
+        <button id="demo" onclick="myFuntion6()">Prep time & Cost</button>
+        <script>
+            function myFuntion6() {
+                document.getElementById("demo").innerHTML = '11 to 16 minutes, $5 to $16';
+            }
+        </script>
+        <br>
         </div>
         <div class="tabs__tab" id="tab_2" data-tab-info>
             <img src="Healthyrecipe.webp" alt="Healthy"width="200" height="100">
-  
-        </div>
+            <br>
+            Caeser Salad
+            <button id="demo" onclick="myFunction2()">Prep time & Cost</button>
+              <script>
+               function myFunction2() {
+                document.getElementById("demo").innerHTML = '7 to 9 minutes, $8 to $10';
+                }
+              </script>
+            <br>
+            <img src="fruit.jpeg" alt="Healthy"width="200" height="100">
+            <br>
+            Oatmeal fruit bowl
+            <button id="demo" onclick="myFunction3()">Prep time & Cost</button>
+              <script>
+               function myFunction3() {
+                document.getElementById("demo").innerHTML = '4 to 8 minutes, $6 to $15';
+                }
+              </script>
+            <br>
+
+     </div>
+
         <div class="tabs__tab" id="tab_3" data-tab-info>
-            <img src="Local.webp" alt="local"width="200" height="100">
-  
-        </div>
+            <img src="Egg.jpeg" alt="local"width="200" height="100">
+            <br>
+    Egg Sandwich
+    <button id="demo" onclick="myFunction6()">Prep time & Cost</button>
+      <script>
+       function myFunction6() {
+        document.getElementById("demo").innerHTML = '10 to 12 minutes, $4.5 to $9';
+        }
+      </script>
+    <br>
+    <img src="burrito.jpeg" alt="local"width="200" height="100">
+    <br>
+    Burrito
+    <button id="demo" onclick="myFunction5()">Prep time & Cost</button>
+    <script>
+        function myFunction5() {
+            document.getElementById("demo").innerHTML = '15 to 18 minutes, $8 to $18';
+        }
+    </script>
+    <br>
+ </div>
+
+
         <div class="tabs__tab" id="tab_4" data-tab-info>
             <img src="Quick.webp" alt="Quick" width="200" height="100">
-
+            <br>
+            Instant Noodles
+            <button id="demo" onclick="myFunction7()">Prep time & Cost</button>
+             <script>
+             function myFunction7() {
+                document.getElementById("demo").innerHTML = 'Less than 5 minutes, costs $1 to $3';
+              }
+               </script>
+            <br>
+            <img src="tacos.jpeg" alt="Quick" width="200" height="100">
+            <br>
+            Chicken Tacos
+            <button id="demo" onclick="myFunction1()">Prep time & Cost</button>
+              <script>
+               function myFunction1() {
+                document.getElementById("demo").innerHTML = '5 to 7 minutes, costs $5 to $6.5';
+                }
+              </script>
+            <br>
         </div>
-        <div class="tabs__tab" id="tab_5" data-tab-info>
-            <img src="Microwave.jpeg" alt="Microwave" width="200" height="100">
-  
-        </div>
 
-        <div class="dropdown">
-            <button id="bar" onclick="myFunction()" class="dropbtn">
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#about">Location</a>
-              <a href="#base">Price</a>
-            </div>
-          </div>
+        
     </div>
     <script type="text/javascript">
         const tabs = document.querySelectorAll('[data-tab-value]')
@@ -125,6 +200,6 @@
             })
         })
     </script>
+    
 </body>
-  
 </html>
