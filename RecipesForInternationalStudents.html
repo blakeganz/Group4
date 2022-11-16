@@ -3,6 +3,8 @@
   
 <head>
     <title>Recipes for International Students</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             background: rgb(244, 238, 244);
@@ -61,12 +63,51 @@
             cursor: pointer;
             color: black;
         }
+
+        h2 {
+        font-size: 16px;
+        }
+        p {
+        font-size: 12px;    
+        }
+
+        h1 {
+        color: pink;
+        text-align: center;
+        }
+
+        p {
+        font-family: verdana;
+        color: rgb(177, 71, 160);
+        }
+        
+        p1 {
+        font-family: verdana;
+        font-size: 8px;
+        color: rgb(111, 100, 110);
+        }
+
+        p2 {
+        font-family: verdana;
+        font-size: 13px;
+        color: rgb(111, 100, 110);
+        text-align: right;
+        }
+
+        p3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(152, 60, 137);
+        font-size: 20px;
+        }
+
+        
+      
     </style>
 </head>
   
 <body>
     <div class="content-tabs">
-        <p>One stop shop for International Students</p>
+        <p3>One stop shop for International Students</p3>
 
     </div>
     <div class="tabs">
@@ -76,38 +117,88 @@
         <span data-tab-value="#tab_4">Quick</span>
         <span data-tab-value="#tab_5">Healthy</span>
     </div>
-  
+
+    <div class="dropdown">
+        <button id="bar" onclick="myFunction()" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about">Time</a>
+          <a href="#base">Ingredients</a>
+          <a href="#blog">Cost</a>
+          <a href="#blog">Serves</a>
+        </div>
+    </div>
+    
+
     <div class="tab-content">
         <div class="tabs__tab" id="tab_1" data-tab-info>
             <img src="party.jpeg" alt="Party Foods"width="300" height="200">
-  
+            <h2 class="listicle-page__title"><a href="https://www.tasteofhome.com/recipes/best-deviled-eggs/" data-name="Best Deviled Eggs" data-module="content recirculation" data-position="card title">Best Deviled Eggs</a>  <p1>(Time:25min Ingredients:12 Cost:$100 Serves:6)</p1></h2>
+                <p> Herbs lend amazing flavor to these deviled eggs, which truly are the best you can make! The recipe includes tasty variations that feature bacon, chipotle peppers and crab.—Jesse &amp; Anne Foust, Bluefield, West Virginia</p>
+            <h2 class="listicle-page__title"><a href="https://www.tasteofhome.com/recipes/mediterranean-pastry-pinwheels/" data-name="Mediterranean Pastry Pinwheels" data-module="content recirculation" data-position="card title">Mediterranean Pastry Pinwheels</a>  <p1>(Time:35min Ingredients:7 Cost:$200 Serves:16)</p1></h2>
+                <p>These quick appetizers are irresistible. The flavors of sun-dried tomatoes and pesto balance beautifully. —Kristen Heigl, Staten Island, New York</p>
+            <h2 class="listicle-page__title"><a href="https://www.tasteofhome.com/recipes/so-very-berry-brie/" data-name="So Very Berry Brie" data-module="content recirculation" data-position="card title">So Very Berry Brie</a>  <p1>(Time:25min Ingredients:9 Cost:$100 Serves:8)</p1></h2>
+                <p>Something quick for a wine and cheese party, with a bounty of berries on hand!! A creation with all the wines and looks so much more impressive than the other plain cheeses! —Kristin Larson-Jantzi, Newton, Kansas</p>
+            <h2 class="listicle-page__title"><a href="https://www.tasteofhome.com/recipes/cream-cheese-cookie-cups/" data-name="Cream Cheese Cookie Cups" data-module="content recirculation" data-position="card title">Cream Cheese Cookie Cups</a>  <p1>(Time:25min Ingredients:10 Cost:$150 Serves:12)</p1></h2>
+               <p> Need a quick dessert? Try these yummy cookie bites. For a pretty look, use an icing bag to pipe the filling into the cups, then top each with mini M&amp;M's. —Rachel Blackston, Mauk, Georgia</p>
+            <h2 class="listicle-page__title"><a href="https://www.tasteofhome.com/recipes/sweet-savory-pineapple-cheese-ball/" data-name="Sweet &amp; Savory Pineapple Cheese Ball" data-module="content recirculation" data-position="card title">Sweet &amp; Savory Pineapple Cheese Ball</a>  <p1>(Time:15min Ingredients:7 Cost:$20 Serves:2)</p1></h2>
+               <p> A childhood favorite pineapple and green pepper cheese ball. It’s always a hit. —Susan Harrison, Laurel, Maryland
         </div>
+
+        
+
         <div class="tabs__tab" id="tab_2" data-tab-info>
             <img src="healthycheap.jpeg" alt="Party Foods"width="300" height="200">
-  
+                <h2><a href="https://www.savorytooth.com/ground-beef-cabbage/">Ground Beef Cabbage Stir Fry</a>   <p1>(Time:20min Ingredients:7 Cost:$50 Serves:3)</p1> </h2>
+                <p> This low carb, keto friendly stir fry has ground beef and shredded cabbage cooked in a slightly spicy sauce. </p>
+                <h2><a href="https://brooklynfarmgirl.com/homemade-sloppy-joes/">Homemade Sloppy Joes</a>   <p1>(Time:20min Ingredients:10 Cost:$10 Serves:3)</p1></h2>
+                <p> Homemade Sloppy Joes recipe that tastes better than Manwich and is ready in 35 minutes! Make a simple sauce with ketchup, brown sugar and cocoa powder! </p>
+                <h2><a href="https://brooklynfarmgirl.com/parsley-parmesan-pasta/">Parsley Pasta with Parmesan</a>   <p1>(Time:15min Ingredients:8 Cost:$100 Serves:6)</p1></h2>
+                <p> Parsley Pasta with Parmesan recipe that takes 15 minutes to make and costs less than $4.   Your entire family will like this fresh pasta dinner meal.</p>
+                <h2><a href="https://www.happyveggiekitchen.com/roasted-cauliflower-pesto-pasta/">Cauliflower Pesto Pasta</a>   <p1>(Time:25min Ingredients:12 Cost:$100 Serves:6)</p1></h2>
+                <p>A delicious, rich and creamy pesto sauce made from smoky roasted cauliflower and cheddar cheese! </p>
         </div>
+
         <div class="tabs__tab" id="tab_3" data-tab-info>
-            <img src="local.jpeg" alt="Party Foods"width="300" height="200">
+            <img src="local.jpeg" alt="Party Foods"width="300" height="200">   
+            <h2><a href="https://brooklynfarmgirl.com/polish-cabbage-and-noodles/">Polish Cabbage and Noodles</a>   <p1>(Time:20min Ingredients:7 Cost:$50 Serves:3)</p1></h2>
+            <p> Polish Cabbage and Noodles or commonly called Haluski is a quick and easy recipe to make! </p>
+            <h2><a href="https://recipesfromapantry.com/creamy-orange-mushroom-pasta/">Creamy Orange Mushroom Pasta</a>   <p1>(Time:20min Ingredients:10 Cost:$10 Serves:3)</p1></h2>
+            <p> Mushroom, orange and pasta lovers this extremely easy, tasty, simple Creamy Orange Mushroom Pasta is for you.  </p>
+            <h2><a href="https://brooklynfarmgirl.com/shredded-chicken-dumpling-soup/">Chicken and Dumpling Soup</a>   <p1>(Time:15min Ingredients:8 Cost:$100 Serves:6)</p1></h2>
+            <p> EASY TO MAKE recipe for Homemade Shredded Chicken Dumpling Soup with potatoes, carrots and celery.  </p>
+            <h2><a href="https://realfoodrealdeals.com/baked-pasta-casserole/">Baked Pasta Casserole</a>   <p1>(Time:25min Ingredients:12 Cost:$100 Serves:6)</p1></h2>
+            <p> This baked pasta casserole is a delicious, flavorful, frugal dinner recipe. </p>
+    
   
         </div>
         <div class="tabs__tab" id="tab_4" data-tab-info>
             <img src="quick.jpeg" alt="Party Foods" width="300" height="200">
+                <h2><a href="https://brooklynfarmgirl.com/tomato-mozzarella-salad-with-avocado/">Mozzarella Salad with Avacado</a>   <p1>(Time:20min Ingredients:7 Cost:$50 Serves:3)</p1> </h2>
+                <p> Simple and fresh tomato mozzarella salad with avocado.  This recipe uses olive oil (no balsamic vinegar) to make an easy Summer garden recipe.  </p>
+                <h2><a href="https://brooklynfarmgirl.com/thanksgiving-salad-with-spinach/">Spinach salad</a>   <p1>(Time:20min Ingredients:10 Cost:$10 Serves:3)</p1></h2>
+                <p> Thanksgiving Salad made with spinach, cranberries, crisp apples, and cinnamon, ready in 10 minutes. Super easy healthy side dish to serve during the holidays!  </p>
+                <h2><a href="https://brooklynfarmgirl.com/braised-lettuce/">Braised lettuce</a>   <p1>(Time:15min Ingredients:8 Cost:$100 Serves:6)</p1></h2>
+                <p> This Cooked Lettuce (in Chicken Broth) recipe transforms regular raw lettuce into a deeply flavorful side dish!  </p>
+                <h2><a href="https://brooklynfarmgirl.com/how-to-dehydrate-cherry-tomatoes/">Tomato twist</a>   <p1>(Time:25min Ingredients:12 Cost:$100 Serves:6)</p1></h2>
+                <p> This easy method will show you exactly How To Dehydrate Cherry Tomatoes using a dehydrator.  </p>
 
+            
         </div>
+        
         <div class="tabs__tab" id="tab_5" data-tab-info>
             <img id="healthy" src="healthy.jpeg" alt="Healthy" width="300" height="200">
-  
+            <h2><a href="https://brooklynfarmgirl.com/how-to-store-bok-choy/" Bok Choy="true">Homemade Egg Noodles</a>   <p1>(Time:35min Ingredients:5 Cost:$25 Serves:6)</p1></h2>
+            <p> All you need is aluminum foil and a bag to keep greens crisp, crunchy and fresh!  </p>
+            <h2><a href="https://cardamomandcoconut.com/lemon-ricotta-pasta/">Lemon Ricotta Pasta</a>    <p1>(Time:35min Ingredients:5 Cost:$25 Serves:6)</p1></h2>
+            <p> An easy, five-ingredient recipe for lemon ricotta pasta that will be on your table in 20 minutes: perfect for a quick lunch or a busy weeknight. </p>
+            <h2><a href="https://brooklynfarmgirl.com/leftover-spaghetti-casserole/">Leftover Spaghetti Casserole</a>   <p1>(Time:25min Ingredients:12 Cost:$100 Serves:6)</p1></h2>
+            <p> This leftover spaghetti casserole recipe is an easy dinner meal made with leftover spaghetti noodles tossed in pasta sauce, then topped with cheese and baked until golden brown.  </p>
+            <h2><a href="https://brooklynfarmgirl.com/homemade-egg-noodles/" data-rich-text-format-boundary="true">Homemade Egg Noodles</a>   <p1>(Time:35min Ingredients:5 Cost:$25 Serves:6)</p1></h2>
+            <p> Easy to make homemade egg noodles to serve in soup. Made from scratch with egg, salt, milk, flour and baking powder, costing about 50 cents.  </p>
+
         </div>
 
-        <div class="dropdown">
-            <button id="bar" onclick="myFunction()" class="dropbtn">
-            <div id="myDropdown" class="dropdown-content">
-              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-              <a href="#about">Proteins</a>
-              <a href="#base">Carbohydrates</a>
-              <a href="#blog">Fats</a>
-            </div>
-          </div>
     </div>
     <script type="text/javascript">
         const tabs = document.querySelectorAll('[data-tab-value]')
@@ -125,6 +216,9 @@
             })
         })
     </script>
+   
+    
+
 </body>
   
 </html>
