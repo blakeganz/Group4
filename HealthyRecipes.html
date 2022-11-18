@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+<button onclick="location.href='https://blakeganz.github.io/Group4/index.html'" type="button"> Return to Homepage</button><br><br>
+
   <head>
     <body>
       Healthy Recipes for students!!<br>
     </body>
     <button class="tablink" onclick="openPage('Cheap, quick & healthy', this, 'red')">Cheap, quick & Healthy</button>
     <button class="tablink" onclick="openPage('Fav recipe', this, 'green')" id="defaultOpen">Fav recipe</button>
-    <button class="tablink" onclick="openPage('Time of the day', this, 'blue')">Time of the day</button>
     <button class="tablink" onclick="openPage('On phone', this, 'orange')">On phone</button>
   </head>
+<br><br>
+<form action="/action_page.php">
+  <p>Select Meal:</p>
+  <input type="radio" id="bfast" name="meal" value="Breakfast">
+  <label for="bfast">Breakfast</label><br>
+  <input type="radio" id="lunch" name="meal" value="Lunch">
+  <label for="lunch">Lunch</label><br>
+  <input type="radio" id="dinner" name="meal" value="Dinner">
+  <label for="dinner">Dinner</label>
+</form>
+
+
+  <body>
+    <br><br>
+
+    <button id="demo" onclick="myFunction()">The nutritional information will be displayed here </button>
+    <script>
+     function myFunction() {
+      document.getElementById("demo").innerHTML = 'Calories: 333  Carbs:6g Protein:11g Sugar:5g';
+      }
+    </script>
+    <br>
+    Chinese Tomato egg Stir-Fry 
+   
+      <button id="demo" onclick="myFunction7()">Nutritional Information</button>
+      <script>
+       function myFunction7() {
+        document.getElementById("demo").innerHTML = 'Calories: 333  Carbs:6g Protein:11g Sugar:5g';
+        }
+      </script>
+
+    <br>
+    Beef and Pepper Stir-Fry
+    <button id="demo" onclick="myFunction1()">Nutritional Information</button>
+      <script>
+       function myFunction1() {
+        document.getElementById("demo").innerHTML = 'Calories: 249  Carbs:11g Protein:20g Sugar:5g';
+        }
+      </script>
+    <br>
+    Steamed Broccoli
+    <button id="demo" onclick="myFunction2()">Nutritional Information</button>
+      <script>
+       function myFunction2() {
+        document.getElementById("demo").innerHTML = 'Calories: 48  Carbs:8g Protein:4g Sugar:2g';
+        }
+      </script>
+    <br>
+    Steamed Egg
+    <button id="demo" onclick="myFunction3()">Nutritional Information</button>
+      <script>
+       function myFunction3() {
+        document.getElementById("demo").innerHTML = 'Calories: 66  Carbs:1g Protein:5g Sugar:1g';
+        }
+      </script>
+    <br>
+    Cucumber, Avocado and Tomato Salad
+    <button id="demo" onclick="myFunction4()">Nutritional Information</button>
+      <script>
+       function myFunction4() {
+        document.getElementById("demo").innerHTML = 'Calories: 97  Carbs:12g Protein:3g Sugar:4g';
+        }
+      </script>
+    <br>
+    Healthy Hummus
+    <button id="demo" onclick="myFunction5()">Nutritional Information</button>
+      <script>
+       function myFunction5() {
+        document.getElementById("demo").innerHTML = 'Calories: 66  Carbs:6g Protein:4g Sugar:4g';
+        }
+      </script>
+    <br>
+    Egg Muffins
+    <button id="demo" onclick="myFunction6()">Nutritional Information</button>
+      <script>
+       function myFunction6() {
+        document.getElementById("demo").innerHTML = 'Calories: 100  Carbs:6g Protein:7g Sugar:2g';
+        }
+      </script>
+  </body>
+</head>
+</html>
 </html>
  

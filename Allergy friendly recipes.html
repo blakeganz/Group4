@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
+    <style>
+    .card {
+        width: 190px;
+        height: 254px;
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+        display: inline-block;
+        padding: 1;
+       }</style>
+<button onclick="location.href='https://blakeganz.github.io/Group4/index.html'" type="button"> Return to Homepage</button>
 <head>
-<title>Alergy Friendly Recipes</title>
+<title>Allergy Friendly Recipes</title>
 </head>
 <body>
+    <!-- testing pull -->
 
-<h1>Place holder for allery friendly recipes</h1>
-
-
+<h1>Place holder for allergy friendly recipes</h1>
+<div>
+<input type="checkbox" id="gluten" name="allergen_preference0" value="gluten">
+<label for="gluten">Wheat/Gluten</label><br>
+<input type="checkbox" id="dairy" name="allergen_preference1" value="dairy">
+<label for="dairy">Dairy</label><br>
+<input type="checkbox" id="eggs" name="allergen_preference2" value="eggs">
+<label for="eggs">Eggs</label>
+<input type="checkbox" id="Shellfish" name="allergen_preference3" value="shellfish">
+<label for="Shellfish">Shellfish</label>
+<input type="checkbox" id="Nuts" name="allergen_preference4" value="Nuts">
+<label for="Nuts">Nuts</label>
+<input type="checkbox" id="Soy" name="allergen_preference5" value="Soy">
+<label for="Soy">Soy</label>
+</div>
 </body>
+<div class="card"></div>
+<div class="card"></div>
+<div class="card"></div>
 </html>
